@@ -9,66 +9,87 @@
             padding: 0;
             margin: 0;
         }
+        body{
+            background-color: cornsilk;
+        }
         .parent{
-            background-color: rgb(228, 223, 216);
-            height: 900px;
+            background-color: rgb(59, 54, 47);
+            height:800px;
             width: 70%;
-            margin: auto;
+            margin: 5% auto;
             gap: 2rem;
             display: grid;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(4,1fr);
+           
         }
 
         .child{
             height: 100%;
+            background-color: lightgray;
+        }
+
+        .child1, .child2, .child3, .child4, .child5, .child6, .child7, .child8, .child9{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition:all 2s;
+        }
+        .child4:hover, .child5:hover, .child6:hover, .child7:hover, .child8:hover, .child9:hover{
+            transform: translateY(-30px);
+        }
+        .child1:hover, .child2:hover, .child3:hover{
+            transform: translateY(30px);
         }
 
         .child1{
+            background-image: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-1.jpg');
             grid-row: 1/3;
-            grid-column: 1/1;
-            background-color: gray;
-            background-size: cover;
+            grid-column: 1/2;
         }
-
-        .child img{
-            background-position: center;
-            object-fit: fill;
-            background-repeat: no-repeat;
-            background-size: cover;
+        .child2{
+            background-image: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-2.jpg');
         }
+        .child3{
+            background-image: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-3.jpg');
+        }
+        .child4{
+            background-image: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-6.jpg');
+            grid-row: 3/5;
+            grid-column: 1/2;
+        }
+        .child5{
+            background-image: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-5.jpg');
+            grid-row: 2/4;
+            grid-column: 2/3;
+        }
+        .child6{
+            background-image: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-4.jpg');
+        }
+        .child7{
+            background-image: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-9.jpg');
+            grid-row: 4/5;
+            grid-column: 2/3;
+        }
+        .child8{
+            background-image: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-7.jpg');
+        }
+        .child9{
+            background-image: url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-8.jpg');
+        }        
     </style>
 </head>
 <body>
     <div class="parent">
-        <div class="child child1">
-            <img  height='100%' src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-1.jpg" alt="">
-        </div>
-        <div class="child child2">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejwWd5H-G9HZW9T2hMLZT1iMvzv-ww4dvew&usqp=CAU" alt="">
-        </div>
-        <div class="child child3">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ZCRLgjrMrvfBKi2Eq4Kg4oyNSqGs09_rag&usqp=CAU" alt="">
-        </div>
-        <div class="child child4">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyn1YrlEC_NtfJ0FVRCBl-rRcjtB8vAOelWg&usqp=CAU" alt="">
-        </div>
-        <div class="child child5">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmMMl9tJB1Ffvyur2BJtKuPUupPnb0OHF_sg&usqp=CAU" alt="">
-            </div>
-        <div class="child child6">
-            <img src="data:image/jpeg;base64,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" alt="">
-        </div>
-        <div class="child child7">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVpZvyqNjv1gOWIoWkbiF5Rv3imLcvPHM01fHZnLUE38WPWnuniQi-P-wszz1EZ7jlKCE&usqp=CAU" alt="">
-        </div>
-        <div class="child child8">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRxTZ37ff9N-IR2WwkDjBsbArM3UGgDb9AA&usqp=CAU" alt="">
-        </div>
-        <div class="child child9">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCANJ6fHUhi0hN4t4JKiWU2FTD5ZEBlcpK3Q&usqp=CAU" alt="">
-        </div>
-            
+      <div class="child child1"></div>
+      <div class="child child2"></div>
+      <div class="child child3"></div>
+      <div class="child child4"></div>
+      <div class="child child5"></div>
+      <div class="child child6"></div>
+      <div class="child child7"></div>
+      <div class="child child8"></div>
+      <div class="child child9"></div>            
     </div>
 </body>
 </html>
